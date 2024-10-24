@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        width: 320px;
+        padding: 16px;
+        font-family: Arial, sans-serif;
+      }
+
+      .header {
+        margin-bottom: 16px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #eee;
+      }
+
+      #saveCurrentPage {
+        width: 100%;
+        padding: 8px 16px;
+        background-color: #2196f3;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 14px;
+      }
+
+      #saveCurrentPage:hover {
+        background-color: #1976d2;
+      }
+
+      #saveCurrentPage:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+      }
+
+      .save-feedback {
+        margin-top: 8px;
+        padding: 8px;
+        border-radius: 4px;
+        display: none;
+      }
+
+      .save-feedback.success {
+        background-color: #e8f5e9;
+        color: #2e7d32;
+        display: block;
+      }
+
+      .save-feedback.error {
+        background-color: #ffebee;
+        color: #c62828;
+        display: block;
+      }
+
+      .bookmark-item {
+        margin: 12px 0;
+        padding: 12px;
+        background-color: #f5f5f5;
+        border-radius: 4px;
+        position: relative;
+      }
+
+      .bookmark-title {
+        font-weight: bold;
+        margin-bottom: 4px;
+        word-break: break-all;
+      }
+
+      .bookmark-page {
+        color: #666;
+        margin-bottom: 8px;
+      }
+
+      .bookmark-date {
+        font-size: 12px;
+        color: #888;
+        margin-bottom: 8px;
+      }
+
+      .bookmark-actions {
+        display: flex;
+        gap: 8px;
+      }
+
+      .bookmark-actions button {
+        padding: 4px 12px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 12px;
+      }
+
+      .open-btn {
+        background-color: #4caf50;
+        color: white;
+      }
+
+      .delete-btn {
+        background-color: #f44336;
+        color: white;
+      }
+
+      .no-bookmarks {
+        text-align: center;
+        color: #666;
+        padding: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <button id="saveCurrentPage">Save Current Page</button>
+      <div id="saveFeedback" class="save-feedback"></div>
+    </div>
+
+    <div id="bookmarksList"></div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

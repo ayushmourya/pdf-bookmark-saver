@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "PDF Bookmark & Page Saver - Save & Open PDFs Online/Offline",
+  "version": "1.0",
+  "description": "Easily save PDF pages as bookmarks for local, online, and offline PDFs. Instantly open PDFs at saved pages with one click.",
+  "permissions": ["storage", "tabs", "activeTab", "scripting"],
+  "host_permissions": ["<all_urls>", "file://*/"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
