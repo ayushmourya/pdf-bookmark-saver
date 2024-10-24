@@ -1,6 +1,6 @@
 # Privacy Policy for PDF Bookmark & Page Saver - Save & Open PDFs Online/Offline
 
-**Effective Date:** [Insert Date]
+**Effective Date:** October 4, 2023
 
 PDF Bookmark & Page Saver is committed to protecting your privacy. This privacy policy outlines our practices regarding the information we collect through our Chrome extension.
 
@@ -18,4 +18,4 @@ We may update this privacy policy from time to time. We will notify you about si
 
 ## Contact Us
 
-If you have any questions or concerns about this privacy policy, please contact us at [Your Email Address].
+If you have any questions or concerns about this privacy policy, please contact us at ayushmourya41@gmail.com.
